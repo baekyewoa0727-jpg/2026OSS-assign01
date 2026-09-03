@@ -1,5 +1,4 @@
-/* AI 제공 html */
-
+  AI 제공 html 수정본
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,10 +7,10 @@
 <title>백예원 · 자기소개</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=IBM+Plex+Sans+KR:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#EAE6DC;
+    --paper:#F1F0F3;
     --ink:#24291F;
     --ink-soft:rgba(36,41,31,0.72);
     --rust:#A64B2A;
@@ -31,7 +30,7 @@
       radial-gradient(circle at 1px 1px, rgba(36,41,31,0.06) 1px, transparent 0);
     background-size:22px 22px;
     color:var(--ink);
-    font-family:'IBM Plex Sans KR', sans-serif;
+    font-family:'Gowun Dodum', sans-serif;
     line-height:1.6;
   }
 
@@ -44,7 +43,7 @@
   /* header */
 
   .hash{
-    font-family:'JetBrains Mono', monospace;
+    font-family:'Gowun Dodum', sans-serif;
     font-size:12px;
     letter-spacing:0.02em;
     color:var(--forest);
@@ -53,34 +52,32 @@
   .hash::before{content:"# ";color:var(--rail);}
 
   h1.name{
-    font-family:'Noto Serif KR', serif;
-    font-weight:700;
+    font-family:'Jua', sans-serif;
+    font-weight:400;
     font-size:clamp(40px, 8vw, 62px);
     margin:0 0 6px;
-    line-height:1.08;
-    letter-spacing:-0.01em;
+    line-height:1.15;
   }
 
   .nickname{
-    font-family:'IBM Plex Sans KR', sans-serif;
-    font-style:italic;
-    font-weight:500;
+    font-family:'Gowun Dodum', sans-serif;
+    font-weight:400;
     color:var(--rust);
     font-size:18px;
     margin:0 0 30px;
   }
 
   .config{
-    font-family:'JetBrains Mono', monospace;
-    font-size:13.5px;
+    font-family:'Gowun Dodum', sans-serif;
+    font-size:14px;
     color:var(--ink-soft);
     border-left:2px solid var(--rail);
     padding-left:18px;
     margin:0 0 56px;
   }
-  .config div{margin:3px 0;}
-  .config .key{color:var(--forest);}
-  .config .key::after{content:": ";color:var(--ink-soft);}
+  .config div{margin:4px 0;}
+  .config .key{color:var(--forest); font-weight:700;}
+  .config .key::after{content:": ";color:var(--ink-soft); font-weight:400;}
 
   /* git graph timeline */
 
@@ -126,17 +123,22 @@
   }
 
   .commit-msg{
-    font-family:'JetBrains Mono', monospace;
+    font-family:'Gowun Dodum', sans-serif;
+    font-weight:700;
     font-size:12.5px;
     color:var(--rust);
     margin:0 0 8px;
   }
 
   .commit h2{
-    font-family:'Noto Serif KR', serif;
-    font-weight:600;
+    font-family:'Jua', sans-serif;
+    font-weight:400;
     font-size:23px;
     margin:0 0 10px;
+  }
+
+  .commit h2 + h2{
+    margin-top:-4px;
   }
 
   .commit p{
@@ -153,12 +155,12 @@
     margin-top:14px;
   }
   .tag{
-    font-family:'JetBrains Mono', monospace;
+    font-family:'Gowun Dodum', sans-serif;
     font-size:12px;
     color:var(--forest);
     border:1px solid var(--rail);
-    border-radius:3px;
-    padding:4px 9px;
+    border-radius:999px;
+    padding:4px 12px;
     background:rgba(68,94,67,0.05);
   }
 
@@ -180,7 +182,7 @@
     display:flex;
     justify-content:space-between;
     align-items:baseline;
-    font-family:'JetBrains Mono', monospace;
+    font-family:'Gowun Dodum', sans-serif;
     font-size:12.5px;
     color:var(--ink-soft);
   }
@@ -205,12 +207,11 @@
 <body>
   <div class="page">
 
-    <p class="hash">a1c9e07 · initial commit</p>
+    <p class="hash"></p>
     <h1 class="name">백예원</h1>
-    <p class="nickname">tato</p>
 
     <div class="config">
-      <div><span class="key">name</span>백예원 (tato)</div>
+      <div><span class="key">name</span>백예원 tato</div>
       <div><span class="key">id</span>24학번</div>
       <div><span class="key">major</span>전산심화</div>
     </div>
@@ -218,9 +219,8 @@
     <div class="log">
 
       <div class="commit">
-        <p class="commit-msg">feat: 관심 분야 및 취미</p>
-        <h2>음악 듣기와 운동을 좋아합니다</h2>
-        <p>공부하다 지치면 음악을 틀어놓고, 몸을 움직이며 다시 집중력을 채우는 편이에요.</p>
+        <p class="commit-msg">관심 분야 및 취미</p>
+        <h2>음악 듣기, 운동</h2>
         <div class="tags">
           <span class="tag">music</span>
           <span class="tag">workout</span>
@@ -228,25 +228,27 @@
       </div>
 
       <div class="commit">
-        <p class="commit-msg">feat: 이번 학기 목표</p>
+        <p class="commit-msg">이번 학기 목표</p>
         <h2>웹 페이지 제작 및 관리</h2>
-        <p>화면을 직접 만들고, 만든 뒤에도 꾸준히 손보고 관리하는 법까지 이번 학기에 익히고 싶습니다.</p>
+        <h2>git 사용법 익히기</h2>
+        <div class="tags">
+          <span class="tag">Web Development</span>
+          <span class="tag">git</span>
+        </div>
       </div>
 
       <div class="commit">
-        <p class="commit-msg">feat: 만들어보고 싶은 프로젝트</p>
-        <h2>회원가입 · 로그인이 되는 웹사이트</h2>
+        <p class="commit-msg">만들어보고 싶은 프로젝트</p>
+        <h2>회원가입 · 로그인 기능</h2>
         <ul class="goal-list">
-          <li>회원가입 / 로그인 기능이 있는 웹사이트 직접 만들고 운영해보기</li>
-          <li>git 사용법 제대로 익혀서 버전 관리에 익숙해지기</li>
+          <li>회원가입 / 로그인 기능이 있는 웹사이트 직접 제작 및 관리</li>
         </ul>
       </div>
 
     </div>
 
     <div class="foot">
-      <span class="branch">main</span>
-      <span>2026 · 2학기</span>
+      <span>2026 · 2학기 · 4학기</span>
     </div>
 
   </div>
