@@ -6,4 +6,5 @@ html 수정 - css 배경화면 색상, 글씨체 (ai로 수정)
 
 
 https://2026-oss-assign01-peach.vercel.app/index.html
+
 https://2026-oss-assign01-peach.vercel.app/index2.html
